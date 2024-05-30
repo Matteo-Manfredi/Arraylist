@@ -61,22 +61,22 @@ public class Smartphone {
         return s;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        boolean uguali=false;
-        if(this==obj){
-            uguali=true;
-        }
-        else{
-            Smartphone s=new Smartphone();
-            if(obj instanceof Smartphone){
-                s= (Smartphone)obj;
-            }
-            if(brand.equals(s.brand)&&model.equals(s.model)&&storageCapacity==s.storageCapacity&&s.price==price){
-                uguali=true;
-            }
+    // @Override
+    // public boolean equals(Object obj) {
+    //     boolean uguali=false;
+    //     if(this==obj){
+    //         uguali=true;
+    //     }
+    //     else{
+    //         Smartphone s=new Smartphone();
+    //         if(obj instanceof Smartphone){
+    //             s= (Smartphone)obj;
+    //         }
+    //         if(brand.equals(s.brand)&&model.equals(s.model)&&storageCapacity==s.storageCapacity&&s.price==price){
+    //             uguali=true;
+    //         }
 
-        }
-        return uguali;
-    }
+    //     }
+    //     return uguali;
+    // }
 }

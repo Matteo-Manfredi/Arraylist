@@ -13,18 +13,15 @@ public class MagazzinoSmartphone {
                 }
         }
     }
-
-
     public void addSmartphone(Smartphone smartphone) {
         if(smartphone!=null){
+            // smartphones.add(new Smartphone(smartphone));
             smartphones.add(smartphone);
         }
     }
 
     public void removeSmartphone(Smartphone smartphone) {
-        if(smartphone!=null){
         smartphones.remove(smartphone);
-        }
     }
 
     public Smartphone[] getSmartphonesArray() {
